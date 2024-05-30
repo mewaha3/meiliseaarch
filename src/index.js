@@ -3,7 +3,7 @@ import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
 import injectScript from "scriptjs";
 
 injectScript(
-  `https://maps.googleapis.com/maps/api/js?v=quarterly&key=AIzaSyDOaUaar4GL0i99LpN2zQHzfWXL1wu_JQo`,
+  `https://maps.googleapis.com/maps/api/js?v=quarterly&key=${process.env.MAP_API_GOOGLEAPIS}`,
   () => {
     const search = instantsearch({
       indexName: "poi_last",
