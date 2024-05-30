@@ -1,0 +1,33 @@
+{
+    "name": "instant-meilisearch-geo-search",
+    "version": "0.1.0",
+    "description": "A geosearch demo using MeiliSearch, InstantSearch, GoogleMaps and instant-meilisearch",
+    "main": "index.html",
+    "scripts": {
+        "start": "parcel index.html --open",
+        "build": "parcel build index.html"
+    },
+    "browserslist": [
+        "defaults"
+    ],
+    "dependencies": {
+        "@meilisearch/instant-meilisearch": "^0.12.0",
+        "instantsearch.js": "4.33.2",
+        "maplibre-gl": "^4.2.0",
+        "parcel-bundler": "^1.6.1",
+        "react": "^18.3.1",
+        "scriptjs": "^2.5.9"
+    },
+    "devDependencies": {
+        "@babel/core": "7.2.0"
+    },
+    "resolutions": {
+        "@babel/preset-env": "7.13.8"
+    },
+    "keywords": [
+        "meilisearch",
+        "search",
+        "instant-meilisearch"
+    ],
+    "license": "MIT"
+}
