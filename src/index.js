@@ -3,13 +3,13 @@ import { instantMeiliSearch } from "@meilisearch/instant-meilisearch";
 import injectScript from "scriptjs";
 
 injectScript(
-  `https://maps.googleapis.com/maps/api/js?v=quarterly&key=${process.env.MAP_API_GOOGLEAPIS}`,
+  `https://maps.googleapis.com/maps/api/js?v=quarterly&key=AIzaSyDOaUaar4GL0i99LpN2zQHzfWXL1wu_JQo`,
   () => {
     const search = instantsearch({
-      indexName: "poi_last",
+      indexName: "poi_pa",
       searchClient: instantMeiliSearch(
-        "https://ms-6265b132cf97-9584.sgp.meilisearch.io",
-        "61fa3ffe68a4a33adfc3a62afb552a7a27fcc84f"
+        "https://ms-c3c3ab0fbc52-10243.sgp.meilisearch.io",
+        "a200313d943dd7329e2657920a625d4b896cfda1"
       )
     });
     search.addWidgets([
